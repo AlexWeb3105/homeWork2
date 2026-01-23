@@ -1,0 +1,11 @@
+table,
+th,
+td {
+    border: black solid 1px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.weekend {
+    color: #f34b4b;
+}
