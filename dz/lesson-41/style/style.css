@@ -1,0 +1,55 @@
+body {
+	font-family: sans-serif;
+}
+
+input,
+#message {
+	border-radius: 7px;
+	min-height: 20px;
+	border: 2px solid #a70d3b;
+}
+
+.form {
+	width: 300px;
+	display: block;
+}
+
+.data-user {
+	background: #ffa586;
+	border-radius: 20px;
+	border: 2px solid #541a2e;
+	border-radius: 20px;
+}
+
+.data-user__title {
+	font-size: 20px;
+}
+
+.data-user {
+	padding: 20px;
+}
+
+label {
+	display: block;
+	margin-top: 10px;
+}
+
+.check {
+	cursor: pointer;
+}
+
+#message {
+	min-width: 174px;
+	resize: vertical;
+	max-height: 150px;
+	min-height: 50px;
+}
+
+.button {
+	cursor: pointer;
+	margin-top: 10px;
+	padding: 5px;
+	border: 1px solid #541a2e;
+	background: #e7746c;
+	border-radius: 10px;
+}
