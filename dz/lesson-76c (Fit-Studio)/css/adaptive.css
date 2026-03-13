@@ -1,0 +1,115 @@
+/* ! разрешения под которое требуется подобрать по умолчанию адаптив */
+/*! ==============1200px 992px 768px 576px 375px ====================*/
+@media (width<=1400px) {
+	.hero__img img {
+		width: 50%;
+	}
+}
+
+@media (width<=1200px) {
+	.container {
+		max-width: 1200px;
+		padding: 0 40px;
+	}
+
+	.card-wrapper {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.news__title {
+		text-align: center;
+	}
+
+	.hero::before,
+	.container__faq::after {
+		display: none;
+	}
+
+	.container__faq {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+}
+
+@media(width<=1100px) {
+
+	.hero-container {
+		padding-top: 20px;
+	}
+
+	.hero-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.button {
+		margin-top: 40px;
+	}
+
+	.hero__info {
+		text-align: center;
+	}
+
+}
+
+@media (width<=768px) {
+	section {
+		padding-bottom: 70px;
+	}
+
+	.nav-list {
+		gap: 20px;
+		flex-wrap: wrap;
+	}
+
+	.footer-logo {
+		padding-top: 20px;
+	}
+}
+
+@media (width<=576px) {
+	.nav-list {
+		gap: 20px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.img__choose {
+		width: 30%;
+		height: 20%;
+		font-size: 2.6vw;
+		padding: 13px;
+	}
+
+	.hero__title {
+		font-size: 50px;
+	}
+
+	.header-inner {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.header-contact {
+		align-items: center;
+	}
+
+	.news__title {
+		font-size: 31px;
+	}
+
+	.accordio__title {
+		font-size: 20px;
+	}
+}
+
+
+@media (width<=455px) {
+	.img__choose {
+		padding: 7px;
+	}
+
+}

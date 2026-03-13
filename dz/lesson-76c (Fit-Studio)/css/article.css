@@ -1,0 +1,127 @@
+body {
+	font-family: Ubuntu;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.3;
+	color: #535755;
+	position: relative;
+
+}
+
+
+
+.article-title {
+	font-family: 'Oswald';
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.15;
+	text-transform: uppercase;
+	color: #2C332F;
+	max-width: 596px;
+
+}
+
+.article-text__one {
+	padding: 40px 0 20px;
+}
+
+
+.article__decor-wrapper::before {
+	content: "";
+	background: url(../images/decor-2.svg) repeat-x;
+	position: absolute;
+	top: 640px;
+	left: -3px;
+	z-index: -1;
+	width: 45%;
+	height: 48px;
+}
+
+
+.intro__img {
+	padding-top: 80px;
+}
+
+.group-classes__title,
+.review__title {
+	font-family: Oswald;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.15;
+	color: #2C332F;
+	text-transform: uppercase;
+
+}
+
+.group-classes__text {
+	max-width: 744px;
+	padding: 40px 0 20px;
+}
+
+.group-classes__list {
+	list-style: none;
+
+}
+
+.group-classes__item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+
+}
+
+/*Использование псевдо элементов*/
+.group-classes__item::before {
+	content: "";
+	background: #3596ED;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+}
+
+.review-video {
+	padding: 40px 0;
+
+}
+
+.wrapper__review-video {}
+
+/*Использование псевдо элементов*/
+.wrapper__review-video::after {
+	content: "";
+	background: url(../images/decor-2.svg) repeat-x;
+	position: absolute;
+	top: 1917px;
+	right: 12px;
+	z-index: -1;
+	width: 45%;
+	height: 48px;
+}
+
+/* ! разрешения под которое требуется подобрать по умолчанию адаптив */
+/*! ==============1200px 992px 768px 576px 375px ====================*/
+
+@media (width<=1200px) {
+
+	.wrapper__review-video::after,
+	.article__decor-wrapper::before {
+		display: none;
+	}
+}
+@media (width<=992px) {
+	.main{
+		padding-top: 40px;
+	}
+
+	.intro__img {
+    padding-top: 40px;
+}
+
+.intro, .group-classes, .review{
+	padding-bottom: 70px;
+}
+	
+}

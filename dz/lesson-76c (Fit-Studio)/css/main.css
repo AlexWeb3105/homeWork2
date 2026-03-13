@@ -1,0 +1,230 @@
+.hero {
+	position: relative;
+}
+
+.hero::before {
+	content: "";
+	position: absolute;
+	top: 439px;
+	z-index: -1;
+	background: url(../images/decor-index.svg);
+	width: 100%;
+	height: 48px;
+}
+
+.hero-container {
+	padding-top: 80px;
+	display: flex;
+	gap: 28px;
+}
+
+.hero__info {
+	max-width: 492px;
+}
+
+.hero__title {
+	color: #2C332F;
+	font-family: Oswald, sans-serif;
+	font-size: 62px;
+}
+
+.hero__title strong {
+	color: #3596ED;
+}
+
+.hero-text {
+	display: inline-block;
+	max-width: 439px;
+	max-height: 63px;
+}
+
+.button {
+	display: inline-block;
+	color: #ffffff;
+	text-align: center;
+	font-family: Ubuntu;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 130%;
+	letter-spacing: 0.3px;
+	text-transform: uppercase;
+
+	margin-top: 140px;
+	padding: 19px 32px;
+	background-color: #3596ED;
+	transition: var(--anima);
+}
+
+.button:hover {
+	opacity: 0.8;
+}
+
+.hero__img {
+	display: flex;
+	position: relative;
+	max-width: 700px;
+}
+
+.img__choose {
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+	width: 160px;
+	height: 86px;
+	text-align: center;
+	padding: 21px;
+	border: 1px solid #535755;
+	background: #ffffffe6;
+}
+
+.card-wrapper {
+	display: flex;
+	gap: 28px;
+}
+
+.news__card {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	border: 1px solid #D3CBD9;
+	max-width: 284px;
+
+}
+
+.card__img {
+	display: block;
+}
+
+.card__sub-text {
+	font-family: Ubuntu;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	letter-spacing: 0.56px;
+	text-transform: uppercase;
+	color: #858E8A;
+	display: block;
+	padding: 20px 20px 8px
+}
+
+.card__title {
+	color: #2C332F;
+	font-family: Ubuntu;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%;
+	padding: 0px 20px;
+}
+
+.card__footer {
+	margin-top: auto;
+}
+
+.card__button {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	margin: 12px 20px;
+	color: #3596ED;
+	font-family: Ubuntu;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%;
+}
+
+.card__button::after {
+	content: "";
+	background-image: url(../images/icon-buutton-news.svg);
+	width: 22px;
+	height: 9px;
+	display: inline-block;
+	transition: var(--anima);
+}
+
+.card__button:hover::after {
+	transform: translateX(5px);
+}
+
+.faq {
+	position: relative;
+
+}
+
+.container__faq {
+	user-select: none;
+	display: flex;
+	gap: 28px;
+}
+
+.container__faq::after {
+	content: "";
+	background: url(../images/decor-2.svg) repeat-x;
+	position: absolute;
+	top: 215px;
+	left: -100px;
+	z-index: -1;
+	width: 45%;
+	height: 48px;
+}
+
+.faq__accordion-list>details {
+	border-block: solid 1px #D3CBD9;
+	/*борде бокс бордер только вверху и внизу*/
+
+}
+
+.faq__accordion-list {
+	width: 100%;
+}
+
+
+details[open] summary::after {
+	transform: rotate(180deg);
+	transition: var(--anima);
+}
+
+summary {
+	transition: var(--anima);
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	cursor: pointer;
+
+}
+
+.accordio__title {
+	color: #2C332F;
+	font-family: Oswald;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 115%;
+	text-transform: uppercase;
+	padding: 20px;
+	display: inline-block;
+
+}
+
+summary::after {
+	content: "";
+	background: url(../images/arrow-ap-icon.svg) no-repeat center /cover;
+	width: 17px;
+	height: 22px;
+	display: block;
+	margin-right: 20px;
+	flex-shrink: 0;
+}
+
+
+.accordio__text {
+	display: block;
+	padding: 0 20px 20px 20px;
+}
