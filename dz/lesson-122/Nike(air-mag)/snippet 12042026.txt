@@ -1,0 +1,103 @@
+// Place your GLOBAL snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+// Placeholders with the same ids are connected.
+// Пример:
+// "Print to console": {
+// 	"scope": "javascript,typescript",
+// 	"prefix": "log",
+// 	"body": [
+// 		"console.log('$1');",
+// 		"$2"
+// 	],
+// 	"description": "Log output to console"}
+// 
+{
+	//!Подключение к спрайту//
+	"Спрайт-svg": {
+		"scope": "html",
+		"prefix": "spr",
+		"body": [
+			"<svg width=\"$1\" height=\"$2\" >",
+			"<use href=\"$3путь./..../sprite.svg#$4ID-иконки\"/>",
+			"</svg>",
+		],
+		"description": "подключение к спрайту с иконками"
+	},
+	//! Центрируем контейнер с тегом//
+	"Контейнер по центру": {
+		"scope": "css",
+		"prefix": "contain",
+		"body": [
+			".container {""width: min($1РАЗМЕР, 100% - $2ПАДДИНГ * 2);",
+			"margin-inline: auto;",
+			"}"
+		],
+		"description": "Центрируем контейнер"
+	}
+	//! Центрируем контейнер//
+	"Свойства контейнера": {
+		"scope": "css",
+		"prefix": "cc",
+		"body": [
+			"width: min($1РАЗМЕР, 100% - $2ПАДДИНГ * 2);",
+			"margin-inline: auto;"
+		],
+		"description": "По центру"
+	}
+	//! Оболочка svg //
+	"Развертка SVG ": {
+		"scope": "svg",
+		"prefix": "svg",
+		"body": [
+			"<!--Что бы настроить цвет через CSS, когда иконки в Спрайте.",
+			"",
+			"Использовать \"currentColor\"",
+			"",
+			"Шаг 1. В спрайте укажите stroke=\"currentColor ",
+			"- это даст управление цветом через CSS и свойство color:\"\" -->",
+			"",
+			"<svg xmlns=\"http://www.w3.org/2000/svg\">",
+			$1,
+			"</svg>"
+		],
+		"description": "Развертка SVG"
+	}
+	//!Центр по флексу //
+	"Центрирование Флекса": {
+		"scope": "css",
+		"prefix": "aj",
+		"body": [
+			"justify-content: center;",
+			"align-items: center;"
+		],
+		"description": "Центрирование Флекса"
+	}
+	//! медиа запрос для установки ховера для сенсорных гаджетов//
+	"hover для сенсорных устройств": {
+		"scope": "css",
+		"prefix": "any-h",
+		"body": [
+			"@media (any-hover: hover) {",
+    "$1\"сюда ховер вставляем\"",
+			"}"
+		],
+		"description": "hover для сенсорных-гаджетов"
+	}
+
+	//! фокусировка на сайте//
+	"Фокусировка на сайте": {
+		"scope": "css",
+  "prefix": "foc-vis",
+  "body": [
+    ":focus-visible{",
+    "	outline: 1px solid red;",
+    "	outline-offset: 2px;",
+    "}",
+    ""
+  ],
+  "description": "Фокус"
+}
+}

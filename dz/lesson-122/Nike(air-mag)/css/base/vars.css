@@ -1,0 +1,38 @@
+:root {
+	/*fonts-Montserrat*/
+	/*200*/
+	--font-light: "Monts-lig", sans-serif;
+
+	/*400*/
+	--font-reg: "Monts-Reg", sans-serif;
+
+	/*500*/
+	--font-med: "Monts-Med", sans-serif;
+
+	/*600*/
+	--font-semBold: "Monts-SemiBold", sans-serif;
+
+	/*air accent__text*/
+	--air-accent__text: "Air-Mont", sans-serif;
+
+	/*Color*/
+	--bg-color: #2A2A29;
+	--main-color: #FFF;
+	--accent-color: #FFEA00;
+	--disable-color: #5D5D56;
+	--secondary-color: #C9C69B;
+	--shadow-menu: #181817;
+
+	/*animation*/
+	--anima: all 0.2s;
+
+	/*размеры container*/
+	--cont-width: 1240px;
+	--cont-padding: 15px;
+
+	/*уровни z-index*/
+	--layer-1: 1;
+	--layer-2: 2;
+	--layer-3: 3;
+
+}

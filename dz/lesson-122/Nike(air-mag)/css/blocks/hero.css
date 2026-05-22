@@ -1,0 +1,114 @@
+.hero{
+	padding-bottom: 94px;
+}
+.hero__container {
+	position: relative;
+	margin-top: 90px;
+	min-height: clamp(350px, calc(223.52071px + 33.727811vw), 635px);
+	/*635px;*/
+	display: flex;
+	flex-direction: column;
+}
+
+.hero__img {
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	text-align: center;
+	z-index: -1;
+	width: clamp(291px, calc(58.458101px + 62.011173vw), 846px);
+}
+
+.hero__header {
+	padding-top: clamp(34px, calc(-42.657459px + 20.441989vw), 219px);
+	display: flex;
+	gap: clamp(5px, calc(-66.666667px + 8.958333vw), 48px);
+	/*48px*/
+	align-items: center;
+}
+
+@media (width<=1100px) {
+	.hero__header {
+		display: block;
+	}
+}
+
+.hero__slogan-item {
+	font-family: var(--font-reg);
+	color: var(--secondary-color);
+	line-height: 130%;
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
+	/*font-size: 16px;*/
+}
+
+@media (width<=1100px) {
+	.hero__slogan-item {
+		font-size: 14px;
+	}
+}
+
+.hero__title {
+	color: var(--main-color);
+	font-family: var(--font-semBold);
+	/*мин окно 375 и макс 1270 */
+	font-size: clamp(48px, calc(14.480447px + 8.938547vw), 128px);
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+@media (width<=1100px) {
+	.hero__title {
+		text-align: center;
+	}
+}
+
+
+.hero__title-accent {
+	font-family: var(--air-accent__text);
+	/*мин окно 375 и макс 1280 */
+	padding-inline: clamp(8px, calc(-397px + 33.75vw), 35px);
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: var(--accent-color);
+	color: transparent;
+
+}
+
+@media (width<=745px) {
+	.hero__title-accent {
+		-webkit-text-stroke-width: 1.5px;
+	}
+}
+
+.hero__footer {
+	flex-grow: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+@media (width<=782px) {
+	.hero__footer {
+		align-items: center;
+	}
+}
+
+.hero__details {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	transition: var(--anima);
+}
+
+@media (any-hover: hover) {
+	.hero__details:hover {
+		color: var(--accent-color);
+	}
+}
+
+.hero__details:active {
+	color: var(--accent-color);
+}

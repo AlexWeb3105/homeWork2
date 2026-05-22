@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./icon/favicon-nike-icon.svg" type="image/x-icon">
+		<link rel="stylesheet" href="./css/index.css">
+		<script type="module" src="./js/index.js"></script>
+		<title>Nike Air mag</title>
+	</head>
+
+	<body class="page__body">
+		<header class="header ">
+			<div class="container header__container ">
+				<div class="logo header__logo" aria-label="Логотип компании Nike" title="Логотип">
+					<a href="#">
+						<svg width="50" height="20">
+							<use href="./icon/sprite.svg#logo" width="50" height="20" />
+						</svg>
+					</a>
+				</div>
+				<nav class="menu header__menu" id="header__menu" aria-label="Меню">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#air-mag" class="menu__link" lang="en">Air Mag</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Размеры</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Характеристики</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Другие ТОП модели</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__controls">
+					<a class="header__order" href="#" aria-label="Сделать заказ">
+						Сделать заказ
+					</a>
+					<div class="header__actions">
+						<button class="header__actions-button" aria-label="Поиск" title="Поиск">
+							<svg class="action__icon-search" width="24" height="24">
+								<use class="header__actions-icon" href="./icon/sprite.svg#search-header" />
+							</svg>
+						</button>
+						<button class="header__actions-button" aria-label="Корзина" title="Корзина">
+							<svg class="action__icon-shop" width="24" height="24">
+								<use class="header__actions-icon" href="./icon/sprite.svg#shopping-cart" />
+							</svg>
+						</button>
+						<button class="burger header__burger" aria-label="Открыть меню" aria-expanded="false"
+							aria-controls="header__menu">
+							<svg width="24" height="24">
+								<use class="burger__menu-open" href="./icon/sprite.svg#burger-icon" />
+								<use class="burger__menu-close" href="./icon/sprite.svg#close-icon" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero">
+				<div class="container hero__container">
+					<picture>
+						<img class="hero__img" src="./images/sneakers_hero-2-img.webp" type="image/webp" alt=" кроссовок на
+							подсвеченном стенде">
+					</picture>
+					<header class="hero__header">
+						<ul class="hero__slogan-list">
+							<li class="hero__slogan-item">Стиль</li>
+							<li class="hero__slogan-item">Скорость</li>
+						</ul>
+						<h1 class="hero__title">nike<strong class="hero__title-accent">Air</strong>Mag
+						</h1>
+					</header>
+					<footer class="hero__footer">
+						<a href="" class="hero__details">Подробнее
+							<svg width="24" height="24">
+								<use href="./icon/sprite.svg#arrows_right" />
+							</svg>
+						</a>
+					</footer>
+				</div>
+			</section>
+			<section class="air-mag" id="air-mag">
+				<div class="container air-mag__container">
+					<h2 class="air-mag__title section-title">Air mag</h2>
+					<p class="air-mag__sub-text">
+						Это не просто кроссовки — это шаг в будущее. С уникальным дизайном и передовыми технологиями, эти кроссовки
+						вдохновлены легендарным кинематографом и готовы сопровождать вас в любых приключениях.
+					</p>
+					<div class="air-mag__benefits">
+						<div class="air-mag__img-wrapper"
+							aria-label="Кроссовки белого цвета на стенде с акцентной подсветкой жёлтого цвета">
+							<img src="./images/sneakers_section_ring_img-2.png" class="air-mag__ring-img"
+								alt="Жёлтое кольцо вокруг кроссовок">
+							<div class="air-mag__ring">
+								<div class="air-mag__inner-shadow"></div>
+								<div class="air-mag__sneakers-shadow air-mag__sneakers-shadow--left "></div>
+								<div class="air-mag__sneakers-shadow air-mag__sneakers-shadow--right"></div>
+							</div>
+							<picture>
+								<img class="air-mag__sneakers" src="./images/sneakers_section_img-1.webp" loading="lazy" type="image/webp" alt="Белые кроссовки Air Mag">
+							</picture>
+						</div>
+					<ul class="air-mag__list">
+							<li class="air-mag__item">
+								<svg class="air-mag__icon" width="45" height="32">
+									<use href="./icon/sprite.svg#check" />
+								</svg>
+								инновационная технология амортизации, которая обеспечивает непревзойденную поддержу суставов
+							</li>
+							<li class="air-mag__item">
+								<svg class="air-mag__icon" width="45" height="32">
+									<use href="./icon/sprite.svg#check" />
+								</svg>
+								высококачественные синтетические материалы для долговечности и комфорта
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+
+</html>
