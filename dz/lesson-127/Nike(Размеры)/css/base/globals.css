@@ -1,0 +1,97 @@
+.page {
+	font-family: var(--font-light);
+	font-weight: 300;
+	line-height: 140%;
+	color: var(--main-color);
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+.page__body {
+	background-color: var(--bg-color);
+	min-width: 375px;
+}
+
+.page__body--no-scroll {
+	/*убираем скролл если накидывается на этот класс при открытие бургера*/
+	overflow-y: hidden;
+}
+
+/* ! внимание */
+section {
+
+	scroll-margin-top: 100px;
+}
+
+
+.container {
+	width: min(var(--cont-width), 100% - 15px * 2);
+	margin-inline: auto;
+}
+
+
+/*заголовок секций*/
+.section-title {
+	color: var(--main-color);
+	font-family: var(--font-semBold);
+	/*мин 375px макс 1274px окно, от 60px до 32px*/
+	font-size: clamp(32px, calc(20.268156px + 3.128492vw), 60px);
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: uppercase;
+	/* от 40 до 30px экран мин 375 и макс 1274 */
+	margin-bottom: clamp(30px, calc(25.828699px + 1.112347vw), 40px);
+}
+
+/*заголовок карточек в разных секций*/
+.card-title {
+	color: var(--main-color);
+	font-family: var(--font-semBold);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+/* блоки с размерами в секции размеры */
+.product__label {
+	font-weight: 400;
+	line-height: 130%;
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
+	color: var(--main-color);
+	padding-bottom: 20px;
+}
+
+.product__size-button {
+	width: 60px;
+	height: 60px;
+	border-radius: 12px;
+	border: solid 1px var(--main-color);
+
+	font-weight: 400;
+	line-height: 130%;
+	/* 20.8px */
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
+	color: var(--main-color);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 0px 10px -5px, inset 0px 0px 10px -5px;
+
+}
+
+.section--margin-bottom {
+	margin-bottom: 92px;
+}
+
+/*! убрать в конце */
+/*.hero,
+.air-mag,
+.header {
+	display: none;
+}*/
