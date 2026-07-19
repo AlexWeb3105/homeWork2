@@ -1,6 +1,5 @@
 .product__header {}
 
-
 /* !ВНИМАНИЕ, УБРАТЬ ПОТОМ */
 /*.product__swiper {
 	display: none;
@@ -27,7 +26,6 @@
 	.swiper-slide__img {
 		width: 100%;
 		max-height: 241px;
-
 	}
 }
 
@@ -66,12 +64,16 @@
 	}
 }
 
-.swiper__btn-prev:hover,
-.swiper__btn-next:hover {
-	color: var(--accent-color);
+@media (any-hover: hover) {
+
+	.swiper__btn-prev:hover,
+	.swiper__btn-next:hover {
+		color: var(--accent-color);
+	}
 }
 
 .product__header-title {
+	font-family: var(--font-semBold);
 	color: var(--main-color);
 	/* 375px - 1400px  24 - 32px  */
 	font-size: clamp(24px, 21.07px + 0.78vw, 32px);
@@ -133,11 +135,14 @@
 	border: 1px solid var(--accent-color);
 }
 
-.product__size-button--available:hover {
-	border: 1px solid var(--accent-color);
-	box-shadow:
-		0px 0px 10px -5px var(--accent-color),
-		inset 0px 0px 10px -5px var(--accent-color);
+@media (any-hover: hover) {
+
+	.product__size-button--available:hover {
+		border: 1px solid var(--accent-color);
+		box-shadow:
+			0px 0px 10px -5px var(--accent-color),
+			inset 0px 0px 10px -5px var(--accent-color);
+	}
 }
 
 .product__buttons-group {
@@ -155,6 +160,12 @@
 	border-radius: 4px;
 }
 
+@media (width<=420px) {
+	.product__quick-buy {
+		width: 100%;
+	}
+}
+
 .product__buy-search {
 	width: 59px;
 	height: 59px;
@@ -167,10 +178,19 @@
 	border-radius: 4px;
 }
 
-.product__quick-buy:hover,
-.product__buy-search:hover {
-	box-shadow: 0 0 15px -3px var(--accent-color);
-	transition: var(--anima) linear;
+@media (width<=420px) {
+	.product__buy-search {
+		flex-shrink: 0;
+	}
+}
+
+@media (any-hover: hover) {
+
+	.product__quick-buy:hover,
+	.product__buy-search:hover {
+		box-shadow: 0 0 15px -3px var(--accent-color);
+		transition: var(--anima) linear;
+	}
 }
 
 .product__label--on-order {
@@ -201,7 +221,10 @@
 	transition: var(--anima) linear;
 }
 
-.product__order:hover {
-	color: var(--accent-color);
-	border-bottom: 1px solid var(--accent-color);
+@media (any-hover: hover) {
+
+	.product__order:hover {
+		color: var(--accent-color);
+		border-bottom: 1px solid var(--accent-color);
+	}
 }
