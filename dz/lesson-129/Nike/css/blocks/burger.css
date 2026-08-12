@@ -1,0 +1,48 @@
+@media (width>820px) {
+	.header__burger {
+		display: none;
+	}
+
+}
+
+@media (width<=820px) {
+	.header__burger {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 1;
+	}
+
+	/*!================у препода запись==========*/
+	/*.burger__menu,
+	.burger__open .burger__menu-close {
+		display: block;
+	}
+
+	.burger__close,
+	.burger__open .burger__menu-open {
+		display: none;
+	}*/
+
+
+	/*===========================класс добавляется burger__open на button===================*/
+	.burger__menu-open {
+		display: block;
+	}
+
+	.burger__menu-close {
+		display: none;
+	}
+
+
+	/*! Если появится первый класс, то выполняется следующий класс - это если писать НЕ через запятую классы*/
+	.burger--open .burger__menu-open {
+		display: none;
+	}
+
+	.burger--open .burger__menu-close {
+		display: block;
+	}
+
+
+}
