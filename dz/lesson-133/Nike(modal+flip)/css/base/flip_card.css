@@ -1,0 +1,204 @@
+/* ============================Анима-flip======================================== */
+
+/* можно убрать ширину и  длину т.к нужно что бы размер задавался другим классом - это стили глобальные, общие */
+.top-models__flip-container {
+	width: min(100%, 400px);
+	height: 204px;
+
+	perspective: 1000px;
+	/*самое важное свойство*/
+}
+
+.top-models__flip-inner {
+	/*width/height    — тоже 200х150 (как у родителя)*/
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+	transition: transform 0.6s;
+	/* ← плавность */
+	transform-style: preserve-3d;
+	/* ← 3D для детей */
+}
+
+/*Когда мы наводим курсор на .flip-container, находим .flip-inner внутри него и ВРАЩАЕМ его на 180 градусов вокруг оси Y.*/
+
+
+@media (any-hover: hover) {
+	.top-models__flip-container:hover .top-models__flip-inner {
+		transform: rotateY(180deg);
+	}
+}
+
+/* обязательные стили для кнопок
+- position: absolute — накладываем их друг на друга
+	 - width/height: 100% — размер как у контейнера
+	 - backface-visibility: hidden — СКРЫВАЕМ «спину» элемента,
+																		чтобы не было видно
+обратной стороны сквозь лицевую */
+.top-models__flip-front,
+.top-models__flip-back {
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+
+}
+
+/* стилизуем отдельно отдельно карты для красоты, а для --back ставим transform: rotateY(180deg), что бы она изначально была повернута */
+.top-models__flip-front {
+	/*background-color: yellow;*/
+}
+
+.top-models__flip-back {
+	border: 2px dashed var(--accent-color);
+	padding: 10px;
+	border-radius: 12px;
+	transform: rotateY(180deg);
+	box-shadow: inset 0px 0px 30px 3px var(--accent-color-opc);
+}
+
+.btn__flip-back {}
+
+
+/* ======================ИИ-GigaCODE============== */
+
+.product-card {
+	width: 400px;
+	height: 204px;
+	background: #ffffff;
+	border-radius: 12px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+	padding: 16px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+/* --- Заголовок --- */
+.product-card__header {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.product-card__name {
+	font-size: 15px;
+	font-weight: 700;
+	color: var(--main-color);
+	line-height: 1.2;
+}
+
+.product-card__price {
+	display: flex;
+	flex-direction: column;
+	font-size: 18px;
+	font-weight: 800;
+	color: var(--accent-color);
+	white-space: nowrap;
+}
+
+/* --- Размеры --- */
+.product-card__sizes {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.sizes-label {
+	font-size: 10px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: #888;
+}
+
+.sizes-row {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+.sizes-row--in-stock {
+	margin-bottom: 2px;
+}
+
+.size-badge {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 30px;
+	height: 24px;
+	padding: 0 7px;
+	border-radius: 6px;
+	font-size: 11px;
+	font-weight: 500;
+	border: 1.5px solid;
+}
+
+/* Доступные размеры — зелёные */
+.size-badge--available {
+	/*background: #e8f9ee;*/
+	color: var(--main-color);
+	border-color: #b2e8c8;
+}
+
+/* Размеры под заказ — оранжевые */
+.size-badge--preorder {
+	color: var(--disable-color);
+	border-color: var(--disable-color);
+
+}
+
+.size-badge--active {
+	color: var(--accent-color);
+	border-color: var(--accent-color);
+	transform: translateY(2px);
+	transition: transform 0.5s;
+}
+
+/* --- Кнопки --- */
+.product-card__actions {
+	display: flex;
+	gap: 8px;
+}
+
+.btn {
+	flex: 1;
+	height: 32px;
+	border: none;
+	border-radius: 8px;
+	font-size: 12px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: background 0.2s, transform 0.1s;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+}
+
+.btn:active {
+	transform: scale(0.97);
+	border-style: dashed;
+	color: var(--accent-color);
+	transition: transform 0.5s;
+}
+
+.btn--buy,
+.btn--preorder {
+	background: inherit;
+	color: #fff;
+	border: 1px solid var(--accent-color);
+}
+
+
+@media (any-hover: hover) {
+	.btn--buy:hover,
+	.btn--preorder:hover {
+		box-shadow: inset 0px 0px 8px 3px var(--accent-color-opc);
+		transition: box-shadow 0.5s;
+	}
+}

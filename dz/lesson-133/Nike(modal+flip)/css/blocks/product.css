@@ -1,0 +1,215 @@
+.product__swiper {
+	border-radius: 12px;
+	border: 2px solid var(--accent-color);
+	margin-bottom: 60px;
+	box-shadow:
+		0px 0px 30px -5px var(--accent-color-opc),
+		inset 0px 0px 30px -5px var(--accent-color-opc);
+}
+
+.swiper-wrapper {
+	padding-block: 46px 57px;
+}
+
+@media (width<=768px) {
+	.swiper-wrapper {
+		padding-block: 50px;
+	}
+
+	.swiper-slide__img {
+		width: 100%;
+		max-height: 241px;
+	}
+}
+
+.swiper-slide__inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.swiper__btn-prev,
+.swiper__btn-next {
+	color: var(--main-color);
+	transition: var(--anima) linear;
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	z-index: 2;
+}
+
+.swiper__btn-prev {
+	left: 20px;
+}
+
+.swiper__btn-next {
+	right: 20px;
+}
+
+@media (width<=580px) {
+	.swiper__btn-prev {
+		left: 0px;
+	}
+
+	.swiper__btn-next {
+		right: 0px;
+	}
+}
+
+@media (any-hover: hover) {
+
+	.swiper__btn-prev:hover,
+	.swiper__btn-next:hover {
+		color: var(--accent-color);
+	}
+}
+
+.product__header-title {
+	font-family: var(--font-semBold);
+	color: var(--main-color);
+	/* 375px - 1400px  24 - 32px  */
+	font-size: clamp(24px, 21.07px + 0.78vw, 32px);
+	font-weight: 600;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.product__header-subtext {
+	padding-block: 20px 40px;
+}
+
+.product__price {
+	font-family: var(--font-semBold);
+	padding-bottom: 40px;
+	/* 375px - 1400px  24 - 32px  */
+	font-size: clamp(24px, 21.07px + 0.78vw, 32px);
+	font-weight: 600;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.product__selector {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+@media (width<=768px) {
+	.product__selector {
+		display: grid;
+		gap: 40px;
+		grid-template-columns: none;
+	}
+
+}
+
+.product__variants-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 10px;
+	padding-bottom: 40px;
+}
+
+.product__size-button--available {
+	transition: all 0.2s linear;
+}
+
+/* добавить через JS */
+.product__size-button--active {
+	color: var(--accent-color);
+	border: 1px solid var(--accent-color);
+}
+
+@media (any-hover: hover) {
+	.product__size-button--available:hover {
+		border: 1px solid var(--accent-color);
+		box-shadow:
+			0px 0px 10px -5px var(--accent-color),
+			inset 0px 0px 10px -5px var(--accent-color);
+	}
+}
+
+.product__buttons-group {
+	display: flex;
+	gap: 10px;
+}
+
+.product__quick-buy {
+	font-family: var(--font-semBold);
+	line-height: 130%;
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
+	padding: 19px 38px;
+	background-color: var(--accent-color);
+	border-radius: 4px;
+}
+
+@media (width<=420px) {
+	.product__quick-buy {
+		width: 100%;
+	}
+}
+
+.product__buy-search {
+	width: 59px;
+	height: 59px;
+	border: 1px solid var(--accent-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: var(--accent-color);
+	border-radius: 4px;
+}
+
+@media (width<=420px) {
+	.product__buy-search {
+		flex-shrink: 0;
+	}
+}
+
+@media (any-hover: hover) {
+
+	.product__quick-buy:hover,
+	.product__buy-search:hover {
+		box-shadow: 0 0 15px -3px var(--accent-color);
+		transition: var(--anima) linear;
+	}
+}
+
+.product__label--on-order {
+	color: var(--secondary-color);
+}
+
+/*! ВНИМАНИЕ оформление выключеной кнопки размеров. Изначально делал через доп класс, но препадаватель показал атрибут на кнопке "выключить" (disabled) и потом уже навешать стили на выключени */
+/* .product__size-button--on-order {
+	color: var(--disable-color);
+	border: 1px solid var(--disable-color);
+} */
+
+:disabled {
+	color: var(--disable-color);
+	border: 1px solid var(--disable-color);
+	cursor: not-allowed;
+}
+
+.product__order {
+	font-family: var(--fon-reg);
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%;
+	color: var(--main-color);
+	border-bottom: 1px solid var(--main-color);
+	padding-bottom: 5px;
+	transition: var(--anima) linear;
+}
+
+@media (any-hover: hover) {
+	.product__order:hover {
+		color: var(--accent-color);
+		border-bottom: 1px solid var(--accent-color);
+	}
+}

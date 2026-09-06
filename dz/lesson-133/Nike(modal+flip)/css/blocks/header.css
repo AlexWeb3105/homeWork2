@@ -1,0 +1,169 @@
+.header {
+	line-height: 130%;
+	padding-block: 30px;
+	background: var(--bg-color);
+
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: var(--layer-3);
+	transition: var(--anima);
+
+}
+
+.header--fixed {
+	box-shadow: 0 0 20px 0 var(--shadow-menu);
+}
+
+.header__container {
+	display: flex;
+	/*justify-content: center;*/
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	justify-content: center;
+	align-items: center;
+}
+
+.header__logo {
+	/*!min-width 820px max-width 1440*/
+	margin-right: clamp(30px, -7.768rem + 16.96vw, 120px);
+}
+
+/*=======Так сделали в уроке========*/
+.header__menu {
+	/*margin-inline: 120px auto; */
+	/*не задали флекс т.к на контейнере уже стоит флекс*/
+	flex-grow: 1;
+	/*Свойство от преподавателя*/
+}
+
+@media (width<=820px) {
+.header__menu {
+	/*! Задали минимальную ширину т.к если задавать падинги, как в макете, то при добавление букв в названия меню, то он расширятся */
+		position: fixed;
+		right: -100vw;
+		top: 0;
+		bottom: 0;
+		z-index: var(--layer-1);
+		
+		overflow: hidden;
+		opacity: 0;
+		
+		background-color: var(--bg-color);
+		box-shadow: 0 0 20px 0 var(--shadow-menu);
+		padding-top: 144px;
+		padding-right: 15px;
+		min-width: 297px;
+		transition: var(--anima);
+		/*overflow 0.2s, opacity 0.2s, right 0.2s;*/
+	}
+	
+	.header__menu--open {
+		right: 0;
+		overflow: visible;
+		opacity: 1;
+	}
+	
+	.header__menu .menu__list {
+		flex-direction: column;
+		justify-content: end;
+		text-align: end;
+	}
+}
+
+.header__controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*! Ширина больше 820 универсально для */
+@media (width>820px) {
+	.header__controls {
+		gap: 60px;
+	}
+}
+
+@media (width<=820px) {
+	.header__controls {
+		gap: 30px;
+	}
+}
+
+.header__order {
+	border-bottom: 1px var(--accent-color) solid;
+	padding-bottom: 5px;
+	color: var(--accent-color);
+	position: relative;
+	font-size: 13px;
+}
+
+.header__order::after {
+	content: "";
+	background: white;
+	position: absolute;
+	width: 90%;
+	/* у препода 90% т.к свечение должно доходить до конца*/
+	border-radius: 90px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+	/*это центрирует с учетом left и top*/
+	box-shadow: 0 0 50px 3px var(--accent-color);
+
+	/*27'28" время в уроке. Препод делал через другие свойства и бегграунд */
+	visibility: hidden;
+	opacity: 0;
+
+	/*всегда использовать для плавности появления*/
+	transition: all 0.2s linear;
+}
+
+@media (any-hover: hover) {
+	.header__order:hover::after {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.header__actions {
+	display: flex;
+	gap: 20px;
+}
+
+@media (width<=820px) {
+	.header__actions {
+		gap: 30px;
+	}
+}
+
+.action__icon-search,
+.action__icon-shop {
+	color: var(--main-color);
+	transition: var(--anima);
+}
+
+@media (any-hover: hover) {
+
+	.action__icon-search:hover,
+	.action__icon-shop:hover {
+		color: var(--accent-color);
+	}
+}
+
+.action__icon-search:active,
+.action__icon-shop:active {
+	color: var(--accent-color);
+}
+
+.burger__menu {
+	display: none;
+	position: absolute;
+}
+
+/*поставить тень, поставить кнопку крестик и проверить фиксацию*/

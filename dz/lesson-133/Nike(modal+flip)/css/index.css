@@ -1,0 +1,16 @@
+@import url(./base/fonts.css);
+@import url(./base/normalize.css);
+@import url(./base/vars.css);
+@import url(./base/globals.css);
+@import url(./blocks/header.css);
+@import url(./blocks/menu.css);
+@import url(./blocks/hero.css);
+@import url(./blocks/air__mag.css);
+@import url(./blocks/product.css);
+@import url(./blocks/burger.css);
+@import url(./blocks/characteristic.css);
+@import url(./blocks/top_models.css);
+@import url(./blocks/footer.css);
+@import url(./base/flip_card.css);
+@import url(./base/modal.css);
+@import url(./blocks/modal_bay.css);

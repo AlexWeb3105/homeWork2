@@ -1,0 +1,136 @@
+.form-card {
+	background-color: var(--bg-color);
+	width: 100%;
+	max-width: 480px;
+	padding: 40px;
+	border-radius: 16px;
+	box-shadow: 4px 4px 11px -1px #000000ff,
+		-3px -3px 17px -10px #ffffff96;
+	position: relative;
+}
+
+
+/* Заголовок */
+.form-header {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.form-header h2 {
+
+	font-size: clamp(15px, -19.20px + 7.20vw, 24px);
+	font-weight: 600;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	color: var(--main-color);
+}
+
+.form-header p {
+	font-size: 14px;
+	color: #6b7280;
+}
+
+/* Группы полей */
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-group label {
+	display: block;
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 6px;
+	color: var(--main-color);
+	text-align: left;
+}
+
+/* Стили полей ввода */
+.form-group input,
+.form-group select,
+.form-group textarea {
+	color: var(--main-color);
+	width: 100%;
+	padding: 12px 16px;
+	font-size: 16px;
+	border: 0px solid black;
+	border-radius: 8px;
+	background-color: var(--bg-color);
+	transition: all 0.6s ease;
+	font-family: inherit;
+	box-shadow: 4px 4px 11px -1px #000000ff inset, -13px -13px 25px -27px #ffffff96 inset;
+}
+
+.form-group textarea {
+	max-height: 150px;
+	min-height: 50px;
+	resize: vertical;
+
+}
+
+/* Фокус на полях */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+	outline: none;
+	box-shadow: 4px 4px 11px -1px #000000ff, 0px 0px 13px -5px #ffffff96;
+}
+
+.form-group input:focus::placeholder {
+	transform: translateX(5px);
+	transition: var(--anima);
+}
+
+
+/* Кнопка отправки */
+.submit-btn {
+	background-color: var(--bg-color);
+	width: 100%;
+	padding: 14px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #ffffff;
+	/* Основной цвет кнопки */
+	border: solid 1px var(--accent-color-opc);
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+	margin-top: 10px;
+	box-shadow: 4px 4px 11px -1px #000000ff, 0px 0px 13px -5px #ffffff96;
+}
+
+@media (any-hover: hover) {
+	.submit-btn:hover {
+		box-shadow: 4px 4px 11px -1px #000000ff, 0px 0px 13px -5px var(--accent-color);
+	}
+}
+
+.submit-btn:active {
+	transform: translateY(1px);
+	box-shadow: none;
+	box-shadow: 4px 4px 11px -1px #000000ff inset, -13px -13px 25px -27px #ffffff96 inset;
+}
+
+
+/* Нижняя заметка */
+.footer-note {
+	text-align: center;
+	font-size: 12px;
+	color: #9ca3af;
+	margin-top: 20px;
+}
+
+.modal__close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: var(--accent-color-opc);
+	transition: var(--anima);
+}
+
+@media (any-hover: hover) {
+	.modal__close:hover {
+		transform: scale(1.2);
+		color: var(--accent-color);
+		transition: var(--anima);
+	}
+}
