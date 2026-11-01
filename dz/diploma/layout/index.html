@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="page"
+			lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+					content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet"
+					href="./css/base/normalize.css">
+		<link rel="stylesheet"
+					href="./css/index.css">
+		<script type="module"
+						src="./js/index.js"></script>
+
+		<title>shop.co</title>
+	</head>
+
+	<body class="page__body">
+		<div class="top-bar"
+				 id="topBar">
+			<div class="container top-bar__container">
+				<span class="top-bar__text">
+					Зарегистрируйтесь и получите скидку 20% на первую покупку.&nbsp;
+				</span>
+				<a href="#"
+					 class="top-bar__link">Зарегистрироваться сейчас
+				</a>
+				<button class="button-close"
+								type="button"
+								aria-label="закрыть"
+								title="закрыть">
+					<svg width="20"
+							 height="20">
+						<use href="./icon/sprite.svg#close" />
+				</button>
+				</svg>
+			</div>
+		</div>
+		<header class="header">
+			<div class="container header__container">
+				<button class="burger header__burger"
+								aria-label="Открыть меню"
+								aria-expanded="false"
+								aria-controls="header__menu">
+					<svg width="24"
+							 height="24">
+						<use class="burger__menu-open"
+								 href="./icon/sprite.svg#burger" />
+						<use class="burger__menu-close"
+								 href="./icon/sprite.svg#close-icon" />
+					</svg>
+				</button>
+				<div class="logo header__logo">
+					<a href="#">shop.co</a>
+				</div>
+				<nav class="header__menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<details>
+								<summary class="menu__link">
+									Магазины
+									<svg class="menu__arrow"
+											 width="16"
+											 height="16">
+										<use href="./icon/sprite.svg#arrow-buttom" />
+									</svg>
+								</summary>
+								<ul class="menu__dropdown">
+									<li>
+										<a href="#"
+											 class="menu__dropdown-link">
+											Магазин 1
+										</a>
+									</li>
+									<li>
+										<a href="#"
+											 class="menu__dropdown-link">
+											Магазин 2
+										</a>
+									</li>
+									<li>
+										<a href="#"
+											 class="menu__dropdown-link">
+											Магазин 3
+										</a>
+									</li>
+								</ul>
+							</details>
+						</li>
+						<li class="menu__item"><a href="#"
+								 class="menu__link">Скидки</a>
+						</li>
+						<li class="menu__item"><a href="#"
+								 class="menu__link">Новые поступления</a>
+						</li>
+						<li class="menu__item"><a href="#"
+								 class="menu__link">Бренды</a>
+						</li>
+					</ul>
+				</nav>
+
+				<search class="header__search">
+					<form action=""
+								class="search-form"
+								action="/search"
+								method="GET">
+						<div class="search-form__input-wrapper">
+							<input id="site-search"
+										 class="search-form__input"
+										 type="search"
+										 name="q"
+										 placeholder="Искать товары..."
+										 autocomplete="off"
+										 aria-label="Поиск по сайту">
+							<button class="search-form__button"
+											type="submit"
+											aria-label="Найти"
+											title="Найти">
+								<svg width="24"
+										 height="24">
+									<use href="./icon/sprite.svg#search" />
+								</svg>
+							</button>
+						</div>
+					</form>
+				</search>
+				<div class="header__controls">
+					<svg class="header__icon-search"
+							 width="24"
+							 height="24">
+						<use href="./icon/sprite.svg#search" />
+					</svg>
+					<svg class="header__icon-basket"
+							 width="24"
+							 height="24">
+						<use href="./icon/sprite.svg#basket" />
+					</svg>
+					<svg class="header__icon-user"
+							 width="24"
+							 height="24">
+						<use href="./icon/sprite.svg#user" />
+					</svg>
+				</div>
+			</div>
+		</header>
+		<!-- можно стилизовать хедер -->
+	</body>
+	<script type="module"
+					src="./js/index.js"></script>
+
+</html>
