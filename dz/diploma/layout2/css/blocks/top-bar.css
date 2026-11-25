@@ -1,0 +1,64 @@
+.top-bar {
+	background: #000;
+	transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+	max-height: 100px;
+	opacity: 1;
+	overflow: hidden;
+}
+
+.top-bar__container {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 38px;
+	color: #fff;
+	padding-block: 9px;
+}
+
+.top-bar__text {
+	color: #FFF;
+	font-size: 14px;
+
+}
+
+/* через ии Гига-код */
+.top-bar.is-hidden {
+	max-height: 0;
+	opacity: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: 0;
+}
+
+
+.top-bar__link {
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+	text-decoration-skip-ink: auto;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 1px;
+}
+
+.button-close {
+	/* 82.5px - 282px 1200-390 */
+	margin-left: clamp(82.5px, -13.56px + 24.63vw, 282px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (width<=960px) {
+	.top-bar__text {
+		display: none;
+	}
+
+	.top-bar__link {
+		font-size: 12px;
+	}
+
+
+	.top-bar__container {
+		justify-content: center;
+
+	}
+}

@@ -1,0 +1,76 @@
+/* ===========работа кнопки бургера============= */
+@media (width<=650px) {
+	.header__burger {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 3;
+	}
+
+	.burger--open {
+		position: absolute;
+		top: 5px;
+		left: -255px;
+		opacity: 1;
+		transform: translateX(500px);
+		transition: transform 0.5s ease;
+	}
+
+	.burger__menu-close {
+		display: none;
+
+	}
+
+	.burger--open .burger__menu-open {
+		display: none;
+	}
+
+	.burger--open .burger__menu-close {
+		display: block;
+	}
+}
+
+/* ============================================= */
+
+/* =========оверлей меню бургера============ */
+@media (width<=650px) {
+	.header__menu {
+		position: fixed;
+		left: -100vw;
+		top: 0;
+		bottom: 0;
+		z-index: 2;
+
+		overflow: hidden;
+		opacity: 0;
+
+		background-color: var(--bg-color);
+		box-shadow: 0 0 20px 0 #000;
+		padding-top: 50px;
+		padding-left: 15px;
+		min-width: 297px;
+		transition: all 0.5s;
+
+	}
+
+	.header__menu--open {
+		left: 0;
+		overflow: visible;
+		opacity: 1;
+	}
+
+	.header__menu .menu__list {
+		flex-direction: column;
+		justify-content: end;
+		text-align: end;
+		padding-left: 10px;
+	}
+}
+
+/* ================================ */
+
+
+/*убираем скролл если накидывается на этот класс при открытие бургера*/
+.page__body--no-scroll {
+	overflow-y: hidden;
+}

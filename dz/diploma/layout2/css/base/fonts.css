@@ -1,0 +1,98 @@
+@font-face {
+	font-family: 'Satochi-Regular';
+	src:
+		url('../../fonts/Satoshi-Regular.woff2') format('woff2'),
+		url('../../fonts/Satoshi-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Satochi-Medium';
+	src:
+		url('../../fonts/Satoshi-Medium.woff2') format('woff2'),
+		url('../../fonts/Satoshi-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Satochi-Bold';
+	src:
+		url('../../fonts/Satoshi-Bold.woff2') format('woff2'),
+		url('../../fonts/Satoshi-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Fixel-Regular';
+	src:
+		url('../../fonts/FixelText-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Fixel-Medium';
+	src:
+		url('../../fonts/FixelText-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Fixel-Bold';
+	src:
+		url('../../fonts/FixelText-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Integral-ExtraBold';
+	src:
+		url('../../fonts/IntegralCF-ExtraBold.woff2') format('woff2'),
+		url('../../fonts/IntegralCF-ExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Inter-ExtraBold';
+	src:
+		url('../../fonts/Inter-ExtraBold.woff2') format('woff2'),
+		url('../../fonts/Inter-ExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Integral-Bold';
+	src:
+		url('../../fonts/IntegralCF-Bold.woff2') format('woff2'),
+		url('../../fonts/IntegralCF-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Integral-Heavy';
+	src:
+		url('../../fonts/IntegralCF-Heavy.woff2') format('woff2'),
+		url('../../fonts/IntegralCF-Heavy.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+

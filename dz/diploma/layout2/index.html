@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html class="page"
+			lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+					content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon"
+					href="./icon/favicon.svg"
+					type="image/x-icon">
+		<link rel="stylesheet"
+					href="./css/base/normalize.css">
+		<link rel="stylesheet"
+					href="./css/index.css">
+		<script type="module"
+						src="./js/index.js"></script>
+		<title>shop.co</title>
+	</head>
+
+	<body class="page__body">
+		<div class="top-bar"
+				 id="topBar">
+			<div class="container top-bar__container">
+				<span class="top-bar__text">
+					Зарегистрируйтесь и получите скидку 20% на первую покупку.&nbsp;
+				</span>
+				<a href="#"
+					 class="top-bar__link">Зарегистрироваться сейчас
+				</a>
+				<button class="button-close"
+								type="button"
+								aria-label="закрыть"
+								title="закрыть">
+					<svg width="20"
+							 height="20">
+						<use href="./icon/sprite.svg#close" />
+				</button>
+				</svg>
+			</div>
+		</div>
+		<header class="header">
+			<div class="container header__container">
+				<button class="burger header__burger"
+								aria-label="Открыть меню"
+								aria-expanded="false"
+								aria-controls="header__menu">
+					<svg width="24"
+							 height="24">
+						<use class="burger__menu-open"
+								 href="./icon/sprite.svg#burger" />
+						<use class="burger__menu-close"
+								 href="./icon/sprite.svg#close-icon" />
+					</svg>
+				</button>
+				<div class="logo header__logo">
+					<a href="#">shop.co</a>
+				</div>
+				<nav class="header__menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<details>
+								<summary class="menu__link">
+									Магазины
+									<svg class="menu__arrow"
+											 width="16"
+											 height="16">
+										<use href="./icon/sprite.svg#arrow-buttom" />
+									</svg>
+								</summary>
+								<ul class="menu__dropdown">
+									<li>
+										<a href="#"
+											 class="menu__dropdown-link">
+											Магазин 1
+										</a>
+									</li>
+									<li>
+										<a href="#"
+											 class="menu__dropdown-link">
+											Магазин 2
+										</a>
+									</li>
+									<li>
+										<a href="#"
+											 class="menu__dropdown-link">
+											Магазин 3
+										</a>
+									</li>
+								</ul>
+							</details>
+						</li>
+						<li class="menu__item"><a href="#"
+								 class="menu__link">Скидки</a>
+						</li>
+						<li class="menu__item"><a href="#"
+								 class="menu__link">Новые поступления</a>
+						</li>
+						<li class="menu__item"><a href="#"
+								 class="menu__link">Бренды</a>
+						</li>
+					</ul>
+				</nav>
+				<search class="header__search">
+					<form action=""
+								class="search-form"
+								action="/search"
+								method="GET">
+						<div class="search-form__input-wrapper">
+							<input id="site-search"
+										 class="search-form__input"
+										 type="search"
+										 name="q"
+										 placeholder="Искать товары..."
+										 autocomplete="off"
+										 aria-label="Поиск по сайту">
+							<button class="search-form__button"
+											type="submit"
+											aria-label="Найти"
+											title="Найти">
+								<svg width="24"
+										 height="24">
+									<use href="./icon/sprite.svg#search" />
+								</svg>
+							</button>
+						</div>
+					</form>
+				</search>
+				<div class="header__controls">
+					<svg class="header__icon-search"
+							 width="24"
+							 height="24">
+						<use href="./icon/sprite.svg#search" />
+					</svg>
+					<svg class="header__icon-basket"
+							 width="24"
+							 height="24">
+						<use href="./icon/sprite.svg#basket" />
+					</svg>
+					<svg class="header__icon-user"
+							 width="24"
+							 height="24">
+						<use href="./icon/sprite.svg#user" />
+					</svg>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="hero">
+				<div class="container hero__container">
+					<div class="wrapper-content">
+						<div class="hero__content">
+							<h1 class="hero__title">
+								НАЙДИ ОДЕЖДУ КОТОРАЯ ВЫРАЗИТ ТВОЙ СТИЛЬ
+							</h1>
+							<span class="hero__description">Просмотрите наш набор тщательно сделанной одежды, созданный чтобы
+								подчеркнуть
+								ваш
+								индивидуальный стиль.</span>
+							<button class="hero__btn"
+											title="Купить сейчас"
+											aria-label="Купить сейчас">
+								Купить сейчас
+							</button>
+						</div>
+						<div class="hero__stats">
+							<ul class="stats">
+								<li class="stats__item">
+									<div class="stats__content">
+										<span class="stats__number">200+</span>
+										<p class="stats__text">Всемирных брендов</p>
+									</div>
+								</li>
+								<li class="stats__item">
+									<div class="stats__content">
+										<span class="stats__number">2,000+</span>
+										<p class="stats__text">Качественных товаров</p>
+									</div>
+								</li>
+								<li class="stats__item">
+									<div class="stats__content">
+										<span class="stats__number">30,000+</span>
+										<p class="stats__text">Счастливых клиентов</p>
+									</div>
+								</li>
+							</ul>
+							<div class="hero__wrapper-bg--mobi">
+								<img class="hero__bg"
+										 src="./images/hero/bg-hero-images-m.png"
+										 alt="Модели в стильной одежде">
+								<div class="hero__pattern">
+									<svg class="hero__pattern-left--mobi"
+											 width="44"
+											 height="44">
+										<use href="./icon/sprite.svg#pattern-left--mobi" />
+									</svg>
+									<svg class="hero__pattern-right--mobi"
+											 width="76"
+											 height="76">
+										<use href="./icon/sprite.svg#pattern-right--mobi" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hero__wrapper-bg">
+						<img class="hero__bg"
+								 src="./images/hero/bg-hero-images-m.png"
+								 alt="Модели в стильной одежде">
+						<div class="hero__pattern">
+							<svg class="hero__pattern-left"
+									 width="56"
+									 height="56">
+								<use href="./icon/sprite.svg#pattern-left" />
+							</svg>
+							<svg class="hero__pattern-right"
+									 width="104"
+									 height="104">
+								<use href="./icon/sprite.svg#pattern-right" />
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="hero__brand-bar">
+					<div class="container">
+						<ul class="brand-bar__list">
+							<li class="brand-bar__logo">
+								<svg class="brand-bar__icon--desktop"
+										 width="167"
+										 height="34">
+									<use href="./icon/sprite.svg#versace" />
+								</svg>
+								<svg class="brand-bar__icon--mobi"
+										 width="116.736"
+										 height="23.255">
+									<use href="./icon/sprite.svg#versace-mobi" />
+								</svg>
+							</li>
+							<li class="brand-bar__logo">
+								<svg class="brand-bar__icon--desktop"
+										 width="91"
+										 height="38">
+									<use href="./icon/sprite.svg#zara" />
+								</svg>
+								<svg class="brand-bar__icon--mobi"
+										 width="63.809"
+										 height="26.645">
+									<use href="./icon/sprite.svg#zara-mobi" />
+								</svg>
+							</li>
+							<li class="brand-bar__logo">
+								<svg class="brand-bar__icon--desktop"
+										 width="156"
+										 height="36">
+									<use href="./icon/sprite.svg#gucci" />
+								</svg>
+								<svg class="brand-bar__icon--mobi"
+										 width="109.387"
+										 height="25.243">
+									<use href="./icon/sprite.svg#gucci-mobi" />
+								</svg>
+							</li>
+							<li class="brand-bar__logo">
+								<svg class="brand-bar__icon--desktop"
+										 width="194"
+										 height="32">
+									<use href="./icon/sprite.svg#prada" />
+								</svg>
+								<svg class="brand-bar__icon--mobi"
+										 width="127"
+										 height="21">
+									<use href="./icon/sprite.svg#prada-mobi" />
+								</svg>
+							</li>
+							<li class="brand-bar__logo">
+								<svg class="brand-bar__icon--desktop"
+										 width="207"
+										 height="34">
+									<use href="./icon/sprite.svg#calvin" />
+								</svg>
+								<svg class="brand-bar__icon--mobi"
+										 width="134.845"
+										 height="21.746">
+									<use href="./icon/sprite.svg#calvin-mobi" />
+								</svg>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+	<script type="module"
+					src="./js/index.js"></script>
+
+</html>
+
+<!-- Нужно сделать звездочки -->
